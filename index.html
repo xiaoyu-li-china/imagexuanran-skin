@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebGL2 骨骼动画管线</title>
+  <style>
+    body { margin: 0; background: #1a1a2e; color: #eee; font-family: monospace; }
+    #glcanvas { display: block; width: 100vw; height: 70vh; }
+    #hud { padding: 8px 12px; font-size: 13px; }
+    #hud button { margin-right: 8px; font-family: monospace; }
+    #log { padding: 0 12px; font-size: 12px; white-space: pre-wrap; max-height: 22vh; overflow-y: auto; color: #9fd; }
+  </style>
+</head>
+<body>
+  <canvas id="glcanvas"></canvas>
+  <div id="hud">
+    <button id="btn-idle">Idle</button>
+    <button id="btn-walk">Walk</button>
+    <span id="status"></span>
+  </div>
+  <div id="log"></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
